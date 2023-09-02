@@ -27,7 +27,14 @@ h2{
 a {
   color: inherit;
   text-decoration: none;
+  padding: 0;
+  font-family: inherit;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
+
 
 /*header*/
 header .container{
@@ -66,73 +73,76 @@ header ul li a {
 
 /*main*/
 main .title-area {
-  height: 630px;
+  margin: 18% 0 20%;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
 }
 
-main .title p {
-  text-align: center;
-  font-size: 18px;
-}
 
-main .title h1 {
-  font-size: 28px;
-  text-align: center;
-  padding-top: 250px;
+main .title-area h1 {
+  font-size: 42px;
   font-weight: bold;
 }
 
 
-
-main .about {
+main .works {
   width: 80%;
   margin: auto;
-  margin-bottom: 80px;
 }
 
-main .about h1 {
-  font-size: 42px;
+
+main .works h1 {
+  font-size: 28px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
 }
 
-main .about .icon {
-  width: 300px;
-  border-radius: 50%;
+
+main .section {
+  margin-top: 56px;
 }
 
-main .descript {
+main .container{
+  margin: 16px;
+}
+
+main section {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
-main .descript h2 {
+main .discript {
+  width: 50%;
+  margin: auto;
+}
+
+main .container img {
+  margin: 24px 8px;
+  margin-right: 24px;
+  border-radius: 32%;
+}
+
+main h2{
+  font-size: 22px;
   font-weight: bold;
-  font-size: 24px;
+  margin-top: 16px;
 }
-
 main p{
   line-height: 1.8;
   margin-top: 16px;
 }
 
-
-main .contact {
-  width: 80%;
-  margin: auto;
+main .button {
+  width: 200px;
+  border: 1px solid;
+  border-radius: 14px;
+  text-align: center;
+  background-color: rgb(180, 132, 225);
+  cursor: pointer;
+  margin: 24px auto 0;
 }
 
-main .contact h1 {
-  font-size: 42px;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
-}
 
-main .form {
-  padding-top: 42px;
-  margin: auto;
-  width: 70%;
-}
 
 
 /*footer*/
@@ -148,8 +158,25 @@ footer{
 }
 
 
+/*animation*/
 
-/*スマホ用*/
+.animate {
+  opacity: 0;
+  transition: opacity .3s, transform .3s;
+}
+.animate.slide-from-left{
+  transform: translateX(-40px);
+}
+.animate.slide-from-right{
+  transform: translateX(40px);
+}
+.animate.appear {
+  opacity: 1;
+  transform: none;
+}
+
+
+/*スマホ*/
 @media (max-width: 800px) {
   /*header*/
   header .container {
@@ -157,62 +184,34 @@ footer{
   }
 
   /*main*/
-  main .title-area {
-    margin: 0;
-    height: 50%;
-    padding: 48% 0;
-  }
-
-  main .title h1 {
-    font-size: 24px;
-    padding-top: 0;
-  }
-
-  main .title p {
-    font-size: 16px;
-  }
-
-  main .about {
-    width: fit-content;
-  }
-
-  main .profile { 
+  main .container img {
+    width: 120px;
+    height: 120px;
     margin: auto;
+    
   }
 
-  main .about h1 {
-    font-size: 36px;
-    padding-left: 16px;
+  main .container .img {
+    width: 100%;
+    display: flex;
   }
 
-  main hr {
-    margin: 0 16px;
-  }
-
-  main .about .icon {
-    width: 150px;
-    padding: 8px calc(50% - 75px) 0;
-  }
-
-  main .descript {
-    display: inline;
-  }
-
-  main .profile {
-    width: 78%;
-    padding: 0 auto;
-  }
-
-  main .about {
+  main .container .discript {
     width: 80%;
   }
 
-  main .contact h1 {
-    font-size: 36px;
-    padding-left: 16px;
+  main h2{
+    width: 100%;
+    text-align: center;
   }
 
-  main .form {
-    width: 85%;
-  }
+  main section {
+    display: block;
+    
+  } 
+  
+  main .button { 
+    margin: 24px auto 36px;
+  } 
+
 }

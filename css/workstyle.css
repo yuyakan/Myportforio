@@ -9,6 +9,7 @@ body {
   background-attachment: fixed;
 }
 
+
 img {
   vertical-align: bottom;
 }
@@ -184,6 +185,25 @@ footer{
 
 /*スマホ*/
 @media (max-width: 800px) {
+  body {
+    background-size: 0px; 
+  }
+
+  body:before{
+    content:"";
+    display:block;
+    position:fixed;
+    top: 130px;
+    left: 5%;
+    z-index:-1;
+    width: 90%;
+    height:100vh;
+    background-image: url("../img/background.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
   /*header*/
   header .container {
     margin-right: 4px;

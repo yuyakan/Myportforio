@@ -74,7 +74,7 @@ main .title-area {
 main .title .img {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 0px;
 }
 
 main .title img {
@@ -102,6 +102,17 @@ main .container img{
   width: 300px;
   border-radius: 16px;
 }
+
+main .app {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 32px;
+}
+
+main .apple {
+  padding-right: 32px;
+}
+
 
 main h3 {
   text-align: center;
@@ -165,7 +176,7 @@ footer{
   main .title-area {
     margin: 0;
     height: 30%;
-    padding: 20% 0 20%;
+    padding: 0 0 10%;
   }
 
   main .title h1 {

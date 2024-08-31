@@ -67,6 +67,11 @@ header ul li a {
 
 
 /*main*/
+body {
+  padding: 0;
+  margin: 0;
+}
+
 main .title-area {
   padding: 0%;
 }
@@ -152,8 +157,7 @@ footer{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url("../img/green.png")
-    center / cover;
+    background: url("../img/green.png");
   }
 
   body:before{
@@ -161,17 +165,18 @@ footer{
     display:block;
     position:fixed;
     top: 0px;
-    left: 5%;
     z-index:-1;
     width: 90%;
     height:100vh;
     background-position: left top;
     background-repeat: no-repeat;
     background-size: contain;
-  }
+  } 
   
   /*header*/
   header .container {
+    padding: 0px 6px;
+    padding-top: 6px;
     margin-right: 4px;
   }
 

@@ -137,6 +137,7 @@ main h2{
 main p{
   line-height: 1.8;
   margin-top: 16px;
+  text-align: center;
 }
 
 main .button {

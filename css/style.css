@@ -170,10 +170,13 @@ footer{
     background-size: contain;
   }
   
-  /*header*/
   header .container {
+    padding: 0px 10px;
+    padding-right: 18px;
+    padding-top: 6px;
     margin-right: 4px;
   }
+
 
   /*main*/
   main .title-area {

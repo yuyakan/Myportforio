@@ -4,7 +4,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url("../img/green.png")
+  background: url("../img/yellow.png")
   center / cover;
 }
 
@@ -156,7 +156,7 @@ footer{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url("../img/green.png");
+    background: url("../img/yellow.png");
   }
 
   body:before{

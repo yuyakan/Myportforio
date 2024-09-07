@@ -133,6 +133,7 @@ main h2{
   font-size: 22px;
   font-weight: bold;
   margin-top: 16px;
+  text-align: center;
 }
 main p{
   line-height: 1.8;
@@ -146,6 +147,7 @@ main .button {
   border-radius: 14px;
   text-align: center;
   background-color: rgb(180, 132, 225);
+  color: aliceblue;
   cursor: pointer;
   margin: 24px auto 0;
 }
